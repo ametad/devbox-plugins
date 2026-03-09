@@ -6,7 +6,7 @@
         "meilisearch@latest"
     ],
     "env": {
-        "MEILI_DB_PATH": "{{.Virtenv}}/data/data.ms",
+        "MEILI_DB_PATH": "{{.Virtenv}}/data/data.ms"
     },
     "create_files": {
         "{{.Virtenv}}/process-compose.yaml": "config/process-compose.yaml"
