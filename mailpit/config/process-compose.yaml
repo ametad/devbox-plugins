@@ -1,0 +1,8 @@
+version: "0.5"
+
+processes:
+  mailpit:
+    command: "echo \"Mailpit starting...\" && mailpit -d $MAILPIT_DATABASE"
+    availability:
+      restart: on_failure
+      max_restarts: 5

@@ -1,0 +1,15 @@
+{
+  "name": "mailpit",
+  "version": "0.0.1",
+  "description": "Mailpit serves as a local SMTP server, allowing developers to view emails without sending them to actual email addresses.",
+  "packages": [
+    "mailpit@latest"
+  ],
+  "env": {
+    "MAILPIT_DATABASE": "{{.Virtenv}}/data/mailpit.db"
+  },
+  "create_files": {
+    "{{.Virtenv}}/data/mailpit.db": "config/mailpit.db",
+    "{{.Virtenv}}/process-compose.yaml": "config/process-compose.yaml"
+  }
+}
