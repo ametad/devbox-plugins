@@ -1,0 +1,8 @@
+version: "0.5"
+
+processes:
+  meilisearch:
+    command: "echo \"Meilisearch starting...\" && meilisearch"
+    avalability:
+      restart: on_failure
+      max_restarts: 5

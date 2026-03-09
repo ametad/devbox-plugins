@@ -1,0 +1,14 @@
+{
+    "name": "meilisearch",
+    "version": "0.0.1",
+    "description": "Meilisearch is a RESTful search API",
+    "packages": [
+        "meilisearch@latest"
+    ],
+    "env": {
+        "MEILI_DB_PATH": "{{.Virtenv}}/data/data.ms",
+    },
+    "create_files": {
+        "{{.Virtenv}}/process-compose.yaml": "config/process-compose.yaml"
+    }
+}
