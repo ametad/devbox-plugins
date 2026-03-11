@@ -1,9 +1,9 @@
 {
     "name": "meilisearch",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Meilisearch is a RESTful search API",
     "packages": [
-        "meilisearch@latest"
+        "meilisearch@1.36.0"
     ],
     "env": {
         "MEILI_DB_PATH": "{{.Virtenv}}/data/data.ms"
